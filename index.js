@@ -9,6 +9,6 @@ app.use(cors());
 
 app.use('/api', fundingRoutes);
 
-const PORT = 8000;
+const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => console.log(`Server Running on Port: http://localhost:${PORT}`));
